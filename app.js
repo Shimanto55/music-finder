@@ -7,13 +7,13 @@ const searchsongs = () => {
         .then(data => displaySongs(data.data))
 }
 
-const enterSearch = document.getElementById('search-field');
-enterSearch.addEventListener("Keypress", function (event){
-        console.log("working");
-    if(event.key == 'Enter'){
-        document.getElementById('search-button').click();
-    }
-});
+// const enterSearch = document.getElementById('search-field');
+// enterSearch.addEventListener("Keypress", function (event){
+//         console.log("working");
+//     if(event.key == 'Enter'){
+//         document.getElementById('search-button').click();
+//     }
+// });
 
 const displaySongs = songs => {
     const songContainer = document.getElementById('song-container');
